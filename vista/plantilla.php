@@ -5,7 +5,7 @@
 
     //incluimos el contenido de la pagina
     if (isset($_GET["ruta"])) {
-        if ($_GET["ruta"] == "index") {
+        if ($_GET["ruta"] == "index" || $_GET["ruta"] == "proyect" ) {
             include 'modulos/'.$_GET["ruta"].".php";    
         }
     }

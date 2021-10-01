@@ -6,7 +6,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a href="vista/modulos/index.html" class="navbar-brand">Mashup Template</a>
+    <a href="vista/modulos/index.html" class="navbar-brand">Christmas Giving</a>
   </div>
 
   <nav class="sidebar">
@@ -28,14 +28,17 @@
 
       <nav class="nav-footer">
         <p class="nav-footer-social-buttons">
-          <a class="fa-icon" href="https://www.instagram.com/" title="Instagram">
+          <a class="fa-icon" href="https://www.instagram.com/tesorosdedios" title="Instagram">
             <i class="fa fa-instagram"></i>
           </a>
-          <a class="fa-icon" href="https://facebook.com/" title="Facebook">
+          <a class="fa-icon" href="https://facebook.com/tesorosdediosni" title="Facebook">
             <i class="fa fa-facebook"></i>
           </a>
-          <a class="fa-icon" href="https://twitter.com/" title="Twitter">
+          <a class="fa-icon" href="https://twitter.com/tesorosdediosni" title="Twitter">
             <i class="fa fa-twitter"></i>
+          </a>
+          <a class="fa-icon" href="https://www.youtube.com/channel/UCb51xiHzozNL4SRvntxx4xA" title="YouTube">
+            <i class="fa fa-youtube"></i>
           </a>
         </p>
         <p>Camapañas de <a href="http://www.tesorosdedios.org/" title="Tesoros de Dios">Tesoros de Dios</a></p>

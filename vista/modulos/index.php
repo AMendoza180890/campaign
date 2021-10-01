@@ -25,6 +25,7 @@
         <div class="project-text-holder">
           <div class="project-text-inner">
             <h3>Vivamus vestibulum</h3>
+            <p>Cantidad Total = 0</p>
             <p>Discover more</p>
           </div>
         </div>
