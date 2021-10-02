@@ -10,12 +10,12 @@ class dashboardHomeC{
                             <!-- small box -->
                             <div class="small-box bg-aqua">
                                 <div class="inner">
-                                    <h3>'.$totalRecursos["total"].'</h3>
+                                    <h3>'.$totalRecursos["total"]. '</h3>
                     
                                     <p>Total Recursos Registrados</p>
                                 </div>
                                 <div class="icon">
-                                    <i class="ion-ios-book-outline"></i>
+                                    <i class="ion-ios-list"></i>
                                 </div>
                             <a href="recurso" class="small-box-footer">Click más información <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
@@ -31,7 +31,7 @@ class dashboardHomeC{
                                     <p>Recursos Registrados</p>
                                 </div>
                                 <div class="icon">
-                                    <i class="ion-ios-book-outline"></i>
+                                    <i class="ion-ios-list"></i>
                                 </div>
                             <a href="recurso" class="small-box-footer">Click más información <i class="fa fa-arrow-circle-right"></i></a>
                         </div>

@@ -4,8 +4,7 @@
         'catusuarios' => "catusuarios" , 
         'login' => "login" , 
         'salir' => "salir" , 
-        'recurso' => "recurso",
-        'ayuda' => 'ayuda',
-        'recursoVideo'=>'recursoVideo'
+        'titulo' => 'titulo',
+        'catseccion'=> 'catseccion'
     ]
 ?>

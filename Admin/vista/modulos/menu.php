@@ -16,7 +16,7 @@
                 </a>
             </li>
             <li>
-                <a href="secciones">
+                <a href="catseccion">
                     <i class="fa fa-align-justify"></i>
                     <span>Secciones</span>
                 </a>
