@@ -8,6 +8,8 @@
         if ($_GET["ruta"] == "index" || $_GET["ruta"] == "proyect" ) {
             include 'modulos/'.$_GET["ruta"].".php";    
         }
+    }else {
+        include 'modulos/index.php';
     }
 
     //Footer

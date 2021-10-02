@@ -9,35 +9,24 @@
                     <span>Inicio</span>
                 </a>
             </li>
-
             <li>
-                <a href="recurso">
-                    <i class="fa fa-home"></i>
-                    <span>Recursos Archivos</span>
+                <a href="titulo">
+                    <i class="fa fa-header"></i>
+                    <span>Titulo</span>
                 </a>
             </li>
-
             <li>
-                <a href="recursoVideo">
-                    <i class="fa fa-home"></i>
-                    <span>Recursos Videos</span>
+                <a href="secciones">
+                    <i class="fa fa-align-justify"></i>
+                    <span>Secciones</span>
                 </a>
             </li>
-
             <li>
                 <a href="catusuarios">
                     <i class="fa fa-user"></i>
                     <span>Usuarios</span>
                 </a>
             </li>
-
-            <li>
-                <a href="ayuda">
-                    <i class="fa fa-question-circle"></i>
-                    <span>ayuda</span>
-                </a>
-            </li>
-
             <!--<li>
                 <a href="#">
                     <i class="fa fa-home"></i>
