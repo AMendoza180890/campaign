@@ -12,7 +12,7 @@
     <!-- Default box -->
     <div class="box">
       <div class="box-header with-border">
-        <button class="btn btn-primary" data-toggle="modal" data-target="#editarAyuda">Editar</button>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#editarAyuda">Editar Encabezado</button>
       </div>
       <div class="box-body">
         <?php
