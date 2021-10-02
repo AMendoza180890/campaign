@@ -10,13 +10,10 @@ class tituloController
                         <h4>' . $obtenerInformacionDetitulo["titulo"] . '</h4>
                         <hr>
 
-                        <h2>Descripción:</h2>
+                    <h2>Descripción:</h2>
                         <h4>' . $obtenerInformacionDetitulo["descripcion"] . '</h4>
-                        <hr>
-
-                        <h2>Estado:</h2>
-                        <h4>' . ($obtenerInformacionDetitulo["estado"] == 1 ? 'visible' : 'No visible') . '</h4>
                         <hr>';
+
         } catch (exception $ex) {
             echo 'error:' . $ex->getMessage();
         }
@@ -38,11 +35,6 @@ class tituloController
                             <h2>Descripción:</h2>
                             <textarea class="form-control input-lg" name="descripcionEdit" id="descripcionEdit" cols="30" rows="10" required>' . $obtenerInformacionDetitulo["descripcion"] . '</textarea>
                         </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="estadoEdit" name="estadoEdit" ' . ($obtenerInformacionDetitulo["estado"] == 1 ? 'checked' : '') . '>
-                            <label class="form-check-label" for="estadoEdit">Estado</label>
-                            <small id="tituloContent" class="form-text text-muted">(visible o no visible)</small>
-                        </div>
                         <div class="modal-footer">
                             <button type="submit" class="btn btn-success">Guardar Cambios</button>
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
@@ -59,7 +51,7 @@ class tituloController
         try {
             if (isset($_POST["tituloEdit"]) && isset($_POST["descripcionEdit"])) {
 
-                $infotitulo = ["titulo" => $_POST["tituloEdit"], "descripcion" => $_POST["descripcionEdit"], "estado" => isset($_POST["estadoEdit"])];
+                $infotitulo = ["titulo" => $_POST["tituloEdit"], "descripcion" => $_POST["descripcionEdit"]];
 
                 $actualizarInformacion = tituloModel::actualizartituloM($infotitulo);
 

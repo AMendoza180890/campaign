@@ -16,8 +16,8 @@
       </div>
       <div class="box-body">
         <?php
-        // $verAyuda = new ayudaController();
-        // $verAyuda->mostrarAyudaC();
+            $vertitulo = new tituloController();
+            $vertitulo->mostrartituloC();
         ?>
       </div>
       <!-- /.box-body -->
@@ -27,6 +27,6 @@
   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-<?php include 'editAyuda.php'; ?>
+<?php include 'editTitulo.php'; ?>
 <?php //include 'editarRecurso.php'; 
 ?>

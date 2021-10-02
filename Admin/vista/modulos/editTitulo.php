@@ -9,14 +9,14 @@
                     <h3>Editar Titulo y Descripción</h3>
                 </div>
                 <?php
-                // $editarFrmAyuda  = new ayudaController();
-                // $editarFrmAyuda->editarAyuda();
+                    $editarFrmTitulo     =   new tituloController();
+                    $editarFrmTitulo     ->  editartitulo();
                 ?>
             </form>
         </div>
     </div>
 </div>
 <?php
-// $actualizarAyuda  = new ayudaController();
-// $actualizarAyuda->actualizarAyudaC();
+    $actualizarAyuda  = new tituloController();
+    $actualizarAyuda->actualizartituloC();
 ?>

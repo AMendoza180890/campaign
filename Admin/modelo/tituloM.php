@@ -3,7 +3,7 @@
 class tituloModel extends conexionBD{
     public static function mostrartituloM(){
         try {
-            $pdo = conexionBD::conexion()->prepare("SELECT id, titulo, descripcion, estado FROM arttitulo");
+            $pdo = conexionBD::conexion()->prepare("SELECT id, titulo, descripcion FROM encabezadocampaign");
             $pdo -> execute();
             return $pdo->fetch();
         } catch (exception $ex) {
@@ -13,10 +13,9 @@ class tituloModel extends conexionBD{
 
     public static function actualizartituloM($infotitulo){
         try {
-            $pdo = conexionBD::conexion()->prepare("UPDATE arttitulo SET titulo=:titulo, descripcion=:descripcion, estado=:estado WHERE id = 1");
+            $pdo = conexionBD::conexion()->prepare("UPDATE encabezadocampaign SET titulo=:titulo, descripcion=:descripcion WHERE id = 1");
             $pdo->bindParam(":titulo", $infotitulo["titulo"], PDO::PARAM_STR);
             $pdo->bindParam(":descripcion", $infotitulo["descripcion"], PDO::PARAM_STR);
-            $pdo->bindParam(":estado", $infotitulo["estado"], PDO::PARAM_BOOL);
             if($pdo->execute()){
                 return true;
             }else {
