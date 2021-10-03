@@ -41,7 +41,7 @@ class seccionM extends conexionBD{
     static public function editarRegistroseccionM($datosEditarseccion){
         try {
             if ($datosEditarseccion != null) {
-                $pdo = conexionBD::conexion()->prepare("SELECT id, titulo, descripcionCorta, descripcionLarga, imagen, costo, cantidad, enlace, estado FROM seccioncampaign = :id");
+                $pdo = conexionBD::conexion()->prepare("SELECT seccioncampaign.id, seccioncampaign.titulo, seccioncampaign.descripcionCorta, seccioncampaign.descripcionLarga, seccioncampaign.imagen, seccioncampaign.costo, seccioncampaign.cantidad, seccioncampaign.enlace, estado.id AS estadoid, estado.descripcion FROM seccioncampaign INNER JOIN estado ON seccioncampaign.estado = estado.id WHERE seccioncampaign.id = :id");
 
                 $pdo ->bindParam("id", $datosEditarseccion, PDO::PARAM_INT);
 
@@ -49,7 +49,7 @@ class seccionM extends conexionBD{
 
                 return $pdo->fetch();
             }else{
-                $pdo = conexionBD::conexion()->prepare("SELECT id, titulo, descripcionCorta, descripcionLarga, imagen, costo, cantidad, enlace, estado FROM seccioncampaign = :id");
+                $pdo = conexionBD::conexion()->prepare("SELECT seccioncampaign.id, seccioncampaign.titulo, seccioncampaign.descripcionCorta, seccioncampaign.descripcionLarga, seccioncampaign.imagen, seccioncampaign.costo, seccioncampaign.cantidad, seccioncampaign.enlace, estado.id AS estadoid, estado.descripcion FROM seccioncampaign INNER JOIN estado ON seccioncampaign.estado = estado.id WHERE seccioncampaign.id = :id");
 
                 $pdo ->bindParam("id", $datosEditarseccion, PDO::PARAM_INT);
 
@@ -83,13 +83,13 @@ class seccionM extends conexionBD{
 
             $pdo -> bindParam("id",$datosActualizarseccion["id"],PDO::PARAM_INT);
             $pdo -> bindParam("titulo",$datosActualizarseccion["titulo"],PDO::PARAM_STR);
-            $pdo -> bindParam("descripcionCorta",$datosActualizarseccion["descripcionCorta"],PDO::PARAM_STR);
-            $pdo -> bindParam("descripcionLarga",$datosActualizarseccion["descripcionLarga"],PDO::PARAM_STR);
-            $pdo -> bindParam("imagen",$datosActualizarseccion["imagen"],PDO::PARAM_STR);
-            $pdo->bindParam("costo", $datosActualizarseccion["costo"], PDO::PARAM_STR);
-            $pdo->bindParam("cantidad", $datosActualizarseccion["cantidad"], PDO::PARAM_STR);
+            $pdo -> bindParam("descripcionCorta",$datosActualizarseccion["descripCortaEdit"],PDO::PARAM_STR);
+            $pdo -> bindParam("descripcionLarga",$datosActualizarseccion["descripLargaEdit"],PDO::PARAM_STR);
+            $pdo -> bindParam("imagen",$datosActualizarseccion["foto"],PDO::PARAM_STR);
+            $pdo->bindParam("costo", $datosActualizarseccion["costoEdit"], PDO::PARAM_STR);
+            $pdo->bindParam("cantidad", $datosActualizarseccion["cantidadEdit"], PDO::PARAM_STR);
             $pdo->bindParam("enlace", $datosActualizarseccion["urlEdit"], PDO::PARAM_STR);
-            $pdo->bindParam("estado", $datosActualizarseccion["estado"], PDO::PARAM_STR);
+            $pdo->bindParam("estado", $datosActualizarseccion["estadoEdit"], PDO::PARAM_STR);
             
             if($pdo -> execute()){
                 return true;

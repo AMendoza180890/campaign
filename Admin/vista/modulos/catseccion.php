@@ -46,6 +46,6 @@
 <?php include 'crearseccion.php'; ?>
 <?php include 'editseccion.php'; ?>
 <?php
-$desactivarUsuarioRol = new usuariosC;
-$desactivarUsuarioRol->DesactivarUsuarioC();
+$desactivarSeccion = new seccionC;
+$desactivarSeccion -> DesactivarseccionC();
 ?>

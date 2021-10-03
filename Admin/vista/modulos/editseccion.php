@@ -67,7 +67,7 @@
                 </div>
                 <?php
                 $actualizarseccion  =   new seccionC();
-                $actualizarseccion->actualizarRegistroseccionC();
+                $actualizarseccion -> actualizarRegistroseccionC();
                 ?>
             </form>
         </div>
