@@ -24,14 +24,14 @@
 
                         <div class="form-group">
                             <h2>Descripcion Larga</h2>
-                            <textarea name="descripLargaEdit" id="descripLargaEdit" cols="30" rows="10"></textarea>
+                            <textarea class="form-control input-lg" name="descripLargaEdit" id="descripLargaEdit" cols="30" rows="10"></textarea>
                         </div>
 
                         <div class="form-group">
                             <h2>Foto:</h2>
                             <input type="file" name="fotoEdit" id="fotoEdit">
                             <p class="help-block">peso maximo permitido 200 Mb</p>
-                            <img src="vista/img/seccion/defecto.png" alt="imagen" class="img-thumbnail visor" width="100px;">
+                            <img src="vista/img/usuario/defecto.png" alt="imagen" class="img-thumbnail visor" width="100px;">
                             <input type="hidden" name="fotoActual" id="fotoActual">
                         </div>
 
@@ -66,7 +66,7 @@
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                 </div>
                 <?php
-                $actualizarseccion  = new seccionC();
+                $actualizarseccion  =   new seccionC();
                 $actualizarseccion->actualizarRegistroseccionC();
                 ?>
             </form>

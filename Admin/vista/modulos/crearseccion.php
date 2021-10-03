@@ -31,7 +31,6 @@
                             <input type="file" name="foto" id="foto">
                             <p class="help-block">peso maximo permitido 200 Mb</p>
                             <img src="vista/img/usuario/default.png" alt="imagen" class="img-thumbnail visor" width="100px;">
-                            <input type="hidden" name="fotoActual" id="fotoActual">
                         </div>
 
                         <div class="form-group">
@@ -44,7 +43,7 @@
 
                         <div class="form-group">
                             <h2>URL</h2>
-                            <input type="text" class="form-control input-lg" name="url" id="url" placeholder="https://www.kindful.com ej." required>
+                            <input type="text" class="form-control input-lg" name="urlActual" id="urlActual" placeholder="https://www.kindful.com ej." required>
                         </div>
 
                         <div class="form-group">
@@ -64,8 +63,8 @@
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                 </div>
                 <?php
-                $actualizarseccion  =   new seccionC();
-                $actualizarseccion->actualizarRegistroseccionC();
+                $crearSeccion  =   new seccionC();
+                $crearSeccion->registrarseccionC();
                 ?>
             </form>
         </div>

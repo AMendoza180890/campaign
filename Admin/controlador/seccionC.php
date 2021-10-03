@@ -31,18 +31,11 @@ class seccionC {
                 if(isset($_POST["titulo"])){
                     // codigo de validacion de imagen
                     $rutaImagenProcesada = tratamientoImagen::tratamientoTipoImagen($_FILES["foto"]["tmp_name"], $_FILES["foto"]);
-
-                    $datosNuevoseccion = array(
-                        "titulo"=>$_POST["titulo"], 
-                        "descripcionCorta"=>$_POST["descripcionCorta"], "descripLarga" => $_POST["descripLarga"], 
-                        "url" => $_POST["url"],
-                        "cantidad" => $_POST["cantidad"], 
-                        "costo" => $_POST["costo"], 
-                        "estado"=>$_POST["estado"],
-                        "foto"=>$rutaImagenProcesada);
+ 
+                    $datosNuevoseccion = array("titulo"=>$_POST["titulo"], "descripcionCorta"=>$_POST["descripcionCorta"], "descripLarga" => $_POST["descripLarga"], "urlActual" => $_POST["urlActual"], "cantidad" => $_POST["cantidad"], "costo" => $_POST["costo"], "estado"=>$_POST["estado"],"foto"=>$rutaImagenProcesada);
 
                     $crearNuevoseccion = seccionM::registrarseccionM($datosNuevoseccion);
-                    
+
                     if ($crearNuevoseccion == true) {
                             echo '<script>window.location="catseccion"</script>';
                     }else{
