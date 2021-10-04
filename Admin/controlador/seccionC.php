@@ -11,7 +11,7 @@ class seccionC {
                     <td>'.$value["titulo"].'</td>
                     <td>'.$value["descripcionCorta"].'</td>
                     <td>'.$value["cantidad"].'</td>
-                    <td>'.$value["estado"].'</td>
+                    <td>'.$value["descripcion"].'</td>
                     <td>
                         <div class="btn-group">
                             <button class="btn btn-success EditRegistroseccion" codValor='.$value["id"]. '><i data-toggle="modal" data-target="#editarseccion" class="fa fa-pencil"></i></button>

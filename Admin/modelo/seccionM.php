@@ -4,7 +4,8 @@ class seccionM extends conexionBD{
 
     static public function listadeseccionM(){
         try {
-            $pdo = conexionBD::conexion()->prepare("SELECT id, titulo, descripcionCorta, descripcionLarga, imagen, costo, cantidad, enlace, estado FROM seccioncampaign WHERE estado = 1");
+            $pdo = conexionBD::conexion()->prepare("SELECT seccioncampaign.id, seccioncampaign.titulo, seccioncampaign.descripcionCorta, seccioncampaign.descripcionLarga, seccioncampaign.imagen, seccioncampaign.costo, seccioncampaign.cantidad, seccioncampaign.enlace, estado.descripcion FROM seccioncampaign INNER JOIN estado ON seccioncampaign.estado = estado.id ORDER BY estado.descripcion ASC");
+            
             $pdo -> execute();
             return $pdo->fetchAll();
 
