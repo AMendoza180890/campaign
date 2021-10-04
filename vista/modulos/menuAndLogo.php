@@ -1,23 +1,11 @@
 <header class="">
-  <div class="navbar navbar-default visible-xs">
-    <button type="button" class="navbar-toggle collapsed">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a href="vista/modulos/index.html" class="navbar-brand">Christmas Giving</a>
-  </div>
+   <!-- se carga desde la carpeta de controlador en tituloC -->
+   <?php
+      //se carga desde la carpeta de controlador en tituloC
+      $verEncabezado = new tituloclassC();
+      $verEncabezado -> obtenerTituloC();
+   ?>
 
-  <nav class="sidebar">
-    <div class="navbar-collapse" id="navbar-collapse">
-      <div class="site-header hidden-xs">
-          <a class="site-brand" href="vista/modulos/index.html" title="">
-            <img class="img-responsive site-logo" alt="" src="vista/assets/imgTesoros/logoTdd.png">
-            Nombre de la Campaña
-          </a>
-        <p>texto de muestra que podemos usar para poder describir, no es obligatorio usarlo.</p>
-      </div>
       <!-- <ul class="nav">
         <li><a href="../index.html" title="">Home</a></li>
         <li><a href="../about.html" title="">About</a></li>

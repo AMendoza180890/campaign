@@ -6,7 +6,12 @@
   <div class="gutter-sizer"></div>
     <div class="grid-sizer"></div>
     
-    <div class="grid-item">
+  <?php
+    $obtenerSecciones = new seccionclassC();
+    $obtenerSecciones -> obtenerSeccionC();
+  ?>
+
+    <!-- <div class="grid-item">
       <img class="img-responsive" alt="" src="vista/assets/images/img-12.jpg">
       <a href="../project.html" class="project-description">
         <div class="project-text-holder">
@@ -102,7 +107,7 @@
           </div>
         </div>
       </a>
-    </div>
+    </div> -->
     
   </div>
 </div>

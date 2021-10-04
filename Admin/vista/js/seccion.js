@@ -34,3 +34,10 @@ $(".TablaUsuario").on("click", ".EditRegistroseccion", function() {
         }
     });
 });
+
+// funcion para desactivar registro por GET
+$(".TablaUsuario").on("click", ".DesactivarRegistroseccion", function() {
+    let codValor = $(this).attr("codValor");
+    window.location = "index.php?ruta=catseccion&CodValor=" + codValor;
+    console.log("valor en js " + codValor);
+})
