@@ -3,7 +3,7 @@ require_once 'conexionBD.php';
 class dashboardHomeM extends conexionBD{
     public static function dashboardRecursosM(){
         try {
-            $pdo = conexionBD::conexion()->prepare("SELECT count(id) as total FROM catrecursos");
+            $pdo = conexionBD::conexion()->prepare("SELECT count(id) as total FROM seccioncampaign");
             if ($pdo->execute()) {
                 return $pdo->fetch();
             }

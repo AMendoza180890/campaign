@@ -1,6 +1,6 @@
 <div class="login-box">
   <div class="login-logo">
-    <a href="login"><b>Admin</b>Biblioteca</a>
+    <a href="login"><b>Admin</b>Campaign</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">

@@ -92,9 +92,11 @@ class usuariosC {
         try {
             if (isset($_POST["idEdit"])) {
                 $rutaImagen = $_POST["fotoActual"];
+                
                 if ($_FILES["fotoEdit"]["tmp_name"] != "") {
                     $rutaImagen = tratamientoImagen::tratamientoTipoImagen($_FILES["fotoEdit"]["tmp_name"], $_FILES["fotoEdit"]);
                 }
+                
                 $datosActualizarUsuario = array("id"=>$_POST["idEdit"],"usuario"=>$_POST["usuarioEdit"],"clave"=>$_POST["claveEdit"],"rol"=>$_POST["rolEdit"],"foto"=>$rutaImagen);
 
                 $datosActualizados = usuariosM::actualizarRegistroUsuarioM($datosActualizarUsuario);

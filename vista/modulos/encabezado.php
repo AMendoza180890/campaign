@@ -7,12 +7,12 @@
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <meta name="description" content="Tesoros de Dios, God’s Treasures, is a non-profit organization that serves children with disabilities in Nicaragua, providing a variety of services to the children and their families.">
   <meta name="google" content="notranslate" />
-  <meta content="tesorosdedios.org" name="author">
+  <meta name="author" content="tesorosdedios.org">
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
 
-  <link href="vista/assets/apple-icon-180x180.png" rel="apple-touch-icon">
+  <link href="vista/assets/tesorosLogo180x180.png" rel="tesorosdedios-icon">
   <link href="vista/assets/favicon.ico" rel="icon">
 
   <title>Tesoros de Dios Campaign</title>

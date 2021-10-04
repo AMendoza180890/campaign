@@ -6,13 +6,13 @@
       $verEncabezado -> obtenerTituloC();
    ?>
 
-      <!-- <ul class="nav">
-        <li><a href="../index.html" title="">Home</a></li>
-        <li><a href="../about.html" title="">About</a></li>
+      <ul class="nav">
+        <li><a href="https://www.tesorosdedios.org" title="Home">Home</a></li>
+        <!--<li><a href="../about.html" title="">About</a></li>
         <li><a href="../services.html" title="">Services</a></li>
         <li><a href="../contact.html" title="">Contact</a></li>
-        <li><a href="../components.html" title="">Components</a></li>
-      </ul> -->
+        <li><a href="../components.html" title="">Components</a></li>-->
+      </ul>
 
       <nav class="nav-footer">
         <p class="nav-footer-social-buttons">
@@ -29,7 +29,7 @@
             <i class="fa fa-youtube"></i>
           </a>
         </p>
-        <p>Camapañas de <a href="http://www.tesorosdedios.org/" title="Tesoros de Dios">Tesoros de Dios</a></p>
+        <p><a href="http://www.tesorosdedios.org/" title="Tesoros de Dios">Tesoros de Dios</a> Campaign</p>
       </nav>  
     </div> 
   </nav>

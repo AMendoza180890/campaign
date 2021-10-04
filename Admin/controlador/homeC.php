@@ -17,7 +17,7 @@ class dashboardHomeC{
                                 <div class="icon">
                                     <i class="ion-ios-list"></i>
                                 </div>
-                            <a href="recurso" class="small-box-footer">Click más información <i class="fa fa-arrow-circle-right"></i></a>
+                            <a href="catseccion" class="small-box-footer">Click más información <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
                     </div>';
             }else{
@@ -33,7 +33,7 @@ class dashboardHomeC{
                                 <div class="icon">
                                     <i class="ion-ios-list"></i>
                                 </div>
-                            <a href="recurso" class="small-box-footer">Click más información <i class="fa fa-arrow-circle-right"></i></a>
+                            <a href="catseccion" class="small-box-footer">Click más información <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
                     </div>';
             }
