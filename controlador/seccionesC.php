@@ -11,7 +11,7 @@ class seccionclassC{
                                 <div class="project-text-holder">
                                     <div class="project-text-inner">
                                         <h3>' . $value["titulo"] . '</h3>
-                                        <p class="lh-sm">'.$value["descripcionCorta"]. '</p>
+                                        <p class="lh-sm"  style="color:#000000; background:rgba(255,255,255,0.5); font-weight: bold;">'.$value["descripcionCorta"]. '</p>
                                         <h3>We need '.($value["cantidad"]!="" || $value["cantidad"] ? $value["cantidad"] : "").'</h3>
                                         <h3>Each cost $'. ($value["costo"] != "" || $value["costo"] ? $value["costo"] : "").'</h3>
                                     </div>
