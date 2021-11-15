@@ -12,14 +12,14 @@ class seccionclassC{
                                     <div class="project-text-inner">
                                         <h3>' . $value["titulo"] . '</h3>
                                         <p class="lh-sm">'.$value["descripcionCorta"]. '</p>
-                                        <h3>We need '.$value["cantidad"].'</h3>
-                                        <h3>Each coast $'.$value["costo"].'</h3>
+                                        <h3>We need '.($value["cantidad"]!="" || $value["cantidad"] ? $value["cantidad"] : "").'</h3>
+                                        <h3>Each cost $'. ($value["costo"] != "" || $value["costo"] ? $value["costo"] : "").'</h3>
                                     </div>
                                 </div>
                             </a>
                         </div>';
                 }
-
+                echo 'bienvenido';
         } catch (exception $ex) {
             echo 'error: '.$ex->getMessage();
         }

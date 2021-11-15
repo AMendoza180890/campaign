@@ -48,12 +48,12 @@
 
                         <div class="form-group">
                             <h2>Cantidad</h2>
-                            <input type="text" class="form-control input-lg" name="cantidad" id="cantidad" placeholder="Escribe la cantidad que se necesita del articulo solo el nùmero ej. 20" required>
+                            <input type="text" class="form-control input-lg" name="cantidad" id="cantidad" placeholder="Escribe la cantidad que se necesita del articulo solo el nùmero ej. 20">
                         </div>
 
                         <div class="form-group">
                             <h2>Costo</h2>
-                            <input type="text" class="form-control input-lg" name="costo" id="costo" placeholder="Escribe el costo del articulo, solo el número ej. 150" required>
+                            <input type="text" class="form-control input-lg" name="costo" id="costo" placeholder="Escribe el costo del articulo, solo el número ej. 150">
                         </div>
 
                     </div>
