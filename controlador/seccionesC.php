@@ -11,10 +11,10 @@ class seccionclassC{
                                 <div class="project-text-holder">
                                     <div class="project-text-inner">
                                         <h3>' . $value["titulo"] . '</h3>
-                                        <p class="lh-sm">'.$value["descripcionCorta"]. '</p>
-                                        <h3>We need '.$value["cantidad"].'</h3>
-                                        <h3>Each coast $'.$value["costo"].'</h3>
-                                    </div>
+                                        <p style = "color:black; font-weight: bolder; background:rgb(255,255,255,0.5);">'.$value["descripcionCorta"]. '</p>';
+                                        echo (($value["cantidad"] != null || $value["cantidad"] != 0) ?'<h3>We need '.$value["cantidad"].'</h3>':"");
+                                        echo (($value["costo"] != null || $value["costo"]!= 0) ?'<h3>Each coast $'.$value["costo"].'</h3>':"");
+                                    echo '</div>
                                 </div>
                             </a>
                         </div>';
