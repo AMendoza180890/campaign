@@ -10,8 +10,9 @@ class seccionclassC{
                             <a href="'.$value["enlace"]. '" target="_blank" class="project-description">
                                 <div class="project-text-holder">
                                     <div class="project-text-inner">
-                                        <h3>' . $value["titulo"] . '</h3>
-                                        <p class="lh-sm"  style="color:#000000; background:rgba(255,255,255,0.5); font-weight: bold;">'.$value["descripcionCorta"]. '</p>
+                                        <h2 id="forms-control-disabled">' . $value["titulo"] . '</h2>
+                                        <hr>
+                                        <p class="h3" style="color:#000000; background:rgba(255,255,255,0.5); font-weight: bold;">'.$value["descripcionCorta"]. '</p>
                                     </div>
                                 </div>
                             </a>
