@@ -51,12 +51,12 @@
 
                         <div class="form-group">
                             <h2>Cantidad</h2>
-                            <input type="text" class="form-control input-lg" name="cantidadEdit" id="cantidadEdit" required>
+                            <input type="text" class="form-control input-lg" name="cantidadEdit" id="cantidadEdit">
                         </div>
 
                         <div class="form-group">
                             <h2>Costo</h2>
-                            <input type="text" class="form-control input-lg" name="costoEdit" id="costoEdit" required>
+                            <input type="text" class="form-control input-lg" name="costoEdit" id="costoEdit">
                         </div>
 
                     </div>
