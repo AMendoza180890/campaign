@@ -1,7 +1,7 @@
 <?php
     //header
-    include 'modulos/encabezado.php';
-    include 'modulos/menuAndLogo.php';
+    include_once 'modulos/encabezado.php';
+    include_once 'modulos/menuAndLogo.php';
 
     //incluimos el contenido de la pagina
     if (isset($_GET["ruta"])) {
@@ -13,5 +13,5 @@
     }
 
     //Footer
-    include 'modulos/pie.php';
+    include_once 'modulos/pie.php';
 ?>
